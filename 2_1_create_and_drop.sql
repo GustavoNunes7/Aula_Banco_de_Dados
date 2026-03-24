@@ -1,4 +1,5 @@
 -- database: 2_0_banco.sqlite
+
 -- Códigos do Banco de Dados --
 
 -- ========================================================
@@ -15,7 +16,7 @@ CREATE TABLE  exemplo2 (
     id INTEGER PRIMARY KEY, -- Chave primária (única)
     nome TEXT NOT NULL,  -- Texto Obrigatório
     email TEXT UNIQUE, --Texto único (Não pode repetir)
-    slario REAL,  -- Número real (pode ser nulo)
+    salario REAL,  -- Número real (pode ser nulo)
     ativo INTEGER DEFAULT 1  -- 1 = Ativo, 0 = Inativo
 );
 
@@ -38,4 +39,7 @@ CREATE TABLE alunos (
 -- PRAGMA
 -- ========================================================
 -- Exibir a estrutura da tabela
+
 PRAGMA table_info ('alunos');
+DROP TABLE IF EXISTS alunos;
+DROP TABLE IF EXISTS exemplo2;
