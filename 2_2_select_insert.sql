@@ -40,3 +40,4 @@ VALUES
 
 SELECT * FROM cursos; --Selecionar Todos
 SELECT  nome FROM cursos; -- Selcionar a Coluna nome
+
