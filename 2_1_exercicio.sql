@@ -104,3 +104,5 @@ CREATE table usuarios (
 
 --EX.20
 DROP table IF EXISTS vendas;
+
+DROP table IF EXISTS cursos;
